@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+body {
+  background-color: #282424;
+  user-select: none;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  padding: 15px;
+  color:#c3ef8f;
+}
+
+a {
+  text-decoration: none;
+  color: #00ff00;
+  transition: 0.7s;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+p {
+  margin-top: 30px;
+  padding: 10px;
+  border-top: 7%;
+  border-bottom: 7%;
+  background-color: rgba(40,56,31,255);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #c3ef8f;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  font-size: 67px;
+}
+
+#doomed {
+  border-radius: 7px;
+  display: block;
+  margin-left: 17%;
+  height: 23vw;
+  width: auto;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+#doomed:hover {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+    <p id="demo"></p>
+    <img src="doomed.png" id="doomed">
+    <br><br>
+    <i>Till then, entertain yourself by telnetting to <a href="telnet://towel.blinkenlights.nl">towel.blinkenlights.nl</a><br>I'll be back when it all ends.<br>*uwu*</i>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 21, 2022 13:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + ":" + hours + ":"
+  + minutes + ":" + seconds;
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
