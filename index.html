@@ -1,68 +1,162 @@
 <!DOCTYPE html>
-<html>
-<!--
-███████╗██╗   ██╗███████╗██╗    ██╗██████╗  █████╗ ██╗████████╗██╗  ██╗
-██╔════╝╚██╗ ██╔╝██╔════╝██║    ██║██╔══██╗██╔══██╗██║╚══██╔══╝██║  ██║
-███████╗ ╚████╔╝ ███████╗██║ █╗ ██║██████╔╝███████║██║   ██║   ███████║
-╚════██║  ╚██╔╝  ╚════██║██║███╗██║██╔══██╗██╔══██║██║   ██║   ██╔══██║
-███████║   ██║   ███████║╚███╔███╔╝██║  ██║██║  ██║██║   ██║   ██║  ██║
-╚══════╝   ╚═╝   ╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝   ╚═╝  ╚═╝
--->
+<html lang="en">
 <head>
-  <style>
-    @font-face {
-      font-family: Share Tech;
-      font-style: normal;
-      font-weight: 400;
-      src: url(https://fonts.gstatic.com/s/sharetech/v12/7cHtv4Uyi5K0OeZ7bohU8H0JmA.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-    body {
-      background-color: black;
-      color: white;
-      font-family: Share Tech;
-    }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Norman Borlaug</title>
 
-    a {
-      color: white;
-      font-size: 30px;
-      text-decoration: none;
-      margin-left: 5px;
-      transition: 0.1s;
-    }
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+        body {
+            background-color: #0d0d0d;
+            color: #262626;
+            font-family: 'Roboto', sans-serif;
+        }
 
-    a:hover {
-      color: #00ff00;
-      font-size: 40px;
-      margin-left: 3px;
-    }
+        a { color: cornflowerblue; text-decoration: underline; }
 
-  </style>
-  <script>
+        .textcent { text-align: center; }
 
-  </script>
+        #dwhite {
+            background-color: #e6e6e6;
+            padding: 10px;
+            border-style: none;
+            border-radius: 7px;
+        }
+
+        #white { 
+            background-color: #ffffff;
+            padding: 15px; 
+            text-align: center;
+        }
+
+        #drimgstyle {
+            display: block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #liststuff {
+            margin-left: 25%;
+            margin-right: 25%;
+            font-family: monospace;
+            font-size: 17px;
+        }
+
+        @media (max-width: 700px) {
+            
+            #drimgstyle {
+                display: block;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+                width: 300px;
+            }
+
+            #liststuff {
+            margin-left: 7%;
+            margin-right: 7%;
+            font-family: monospace;
+            font-size: 17px;
+            }
+        }
+
+    </style>
 </head>
 <body>
-  <header>
-    <div>
-      <h1>The small projects I do from time to time end up here.</h1>
-      <h3>One file projects I do for fun, or for practise. Here's the index:</h3><br><br>
+    <div id="dwhite">
+        <br>
+        <h1 class="textcent"><strong>Dr. Norman Borlaug</strong></h1>
+        <p class="textcent">The man who saved a billion lives</p>
+        <br>
+        <div id="white">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" id="drimgstyle" alt="Dr. Norman Borlaug with his companions">
+            <p>Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</p>
+        </div>
+        <br>
+        <h3 class="textcent"><strong>Here's a time line of Dr. Borlaug's life:</strong></h3>
+        <div id="liststuff"><br>
+            <ul>
+                <li><strong>1914</strong> - Born in Cresco, Iowa</li><br>
+                <li>
+                  <strong>1933</strong> - Leaves his family's farm to attend the
+                  University of Minnesota, thanks to a Depression era program known as
+                  the "National Youth Administration"
+                </li><br>
+                <li>
+                  <strong>1935</strong> - Has to stop school and save up more money.
+                  Works in the Civilian Conservation Corps, helping starving
+                  Americans. "I saw how food changed them", he said. "All of this left
+                  scars on me."
+                </li><br>
+                <li>
+                  <strong>1937</strong> - Finishes university and takes a job in the
+                  US Forestry Service
+                </li><br>
+                <li>
+                  <strong>1938</strong> - Marries wife of 69 years Margret Gibson.
+                  Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman,
+                  he returns to school study under Stakman, who teaches him about
+                  breeding pest-resistent plants.
+                </li><br>
+                <li>
+                  <strong>1941</strong> - Tries to enroll in the military after the
+                  Pearl Harbor attack, but is rejected. Instead, the military asked
+                  his lab to work on waterproof glue, DDT to control malaria,
+                  disinfectants, and other applied science.
+                </li><br>
+                <li>
+                  <strong>1942</strong> - Receives a Ph.D. in Genetics and Plant
+                  Pathology
+                </li><br>
+                <li>
+                  <strong>1944</strong> - Rejects a 100% salary increase from Dupont,
+                  leaves behind his pregnant wife, and flies to Mexico to head a new
+                  plant pathology program. Over the next 16 years, his team breeds
+                  6,000 different strains of disease resistent wheat - including
+                  different varieties for each major climate on Earth.
+                </li><br>
+                <li>
+                  <strong>1945</strong> - Discovers a way to grown wheat twice each
+                  season, doubling wheat yields
+                </li><br>
+                <li>
+                  <strong>1953</strong> - crosses a short, sturdy dwarf breed of wheat
+                  with a high-yeidling American breed, creating a strain that responds
+                  well to fertilizer. It goes on to provide 95% of Mexico's wheat.
+                </li><br>
+                <li>
+                  <strong>1962</strong> - Visits Delhi and brings his high-yielding
+                  strains of wheat to the Indian subcontinent in time to help mitigate
+                  mass starvation due to a rapidly expanding population
+                </li><br>
+                <li><strong>1970</strong> - receives the Nobel Peace Prize</li><br>
+                <li>
+                  <strong>1983</strong> - helps seven African countries dramatically
+                  increase their maize and sorghum yields
+                </li><br>
+                <li>
+                  <strong>1984</strong> - becomes a distinguished professor at Texas
+                  A&M University
+                </li><br>
+                <li>
+                  <strong>2005</strong> - states "we will have to double the world
+                  food supply by 2050." Argues that genetically modified crops are the
+                  only way we can meet the demand, as we run out of arable land. Says
+                  that GM crops are not inherently dangerous because "we've been
+                  genetically modifying plants and animals for a long time. Long
+                  before we called it science, people were selecting the best breeds."
+                </li><br>
+                <li><strong>2009</strong> - dies at the age of 95.</li><br>
+              </ul>
+              <p><i>"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress."
+                <br><br>-- Indian Prime Minister Manmohan Singh</i></p>
+        </div>
+        <br>
+        <h3 class="textcent">If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Wikipedia entry</a>.</h3>
     </div>
-  </header>
-  <main>
-    <div>
-      <a href="/miscellaneous/periwinklebbs.html">Periwinkle BBS .................... A web page designed like a retro BBS</a><br><br>
-      <a href="/miscellaneous/fanfictionnet.html">FanFiction.net .................... A search page designed for FanFiction.net</a><br><br>
-      <a href="/miscellaneous/divexp.html">Div experiment .................... An experiment with divs</a><br><br>
-      <a href="/miscellaneous/countdown.html">Countdown .................... I'm away till late May.</a><br><br>
-      <a href="#">Upcoming...</a><br><br>
-      <a href="#">Undecided</a><br><br>
-      <a href="#">Undecided</a><br><br>
-    </div>
-  </main>
-  <footer>
-    <div>
-    </div>
-  </footer>
 </body>
 </html>
